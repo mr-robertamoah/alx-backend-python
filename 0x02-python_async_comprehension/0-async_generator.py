@@ -11,5 +11,6 @@ async def async_generator():
     """
     sleeps for a second and yields random float
     """
-    await asyncio.sleep(1)
-    yield random.random() * 10
+    for i in range(10):
+        await asyncio.sleep(1)
+        yield random.random() * 10
