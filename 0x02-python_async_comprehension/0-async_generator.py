@@ -7,7 +7,7 @@ import asyncio
 import random
 
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     """
     sleeps for a second and yields random float
     """
